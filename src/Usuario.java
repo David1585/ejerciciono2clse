@@ -1,3 +1,5 @@
+import javax.swing.*;
+
 public class Usuario {
     private String nombre;
     private String password;
@@ -13,6 +15,16 @@ public class Usuario {
 
     public String getPassword() {
         return password;
+    }
+
+    public String confirmarusuario(){
+        if(nombre.equals("David")&& password.equals("1234")){
+            return "Bienvenido al sistema";
+        }
+        else{
+            return "Usuario y/o contraseña incorrecta";
+        }
+
     }
 
 

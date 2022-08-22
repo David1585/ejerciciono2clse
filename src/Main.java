@@ -11,13 +11,7 @@ public class Main {
 
         Usuario cliente = new Usuario(nombre,clave);
 
-        if(cliente.getNombre().equals("David")&& cliente.getPassword().equals("1234")){
-            JOptionPane.showMessageDialog(null,"Bienvenido al sistema");
-        }
-        else{
-            JOptionPane.showMessageDialog(null, "Usuario y/o contraseña incorrecta");
-        }
-
+        JOptionPane.showMessageDialog(null,cliente.confirmarusuario());
 
 
     }
